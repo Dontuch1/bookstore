@@ -48,8 +48,8 @@ public class ScoresaveAjaxServlet extends HttpServlet {
 		System.out.println("score.get(1) :"+avgscore.get(1));
 		// json data로 보내주기.
 		JsonObject ob=new JsonObject();
-		ob.addProperty("avgscore", avgscore.get(0));
-		ob.addProperty("cntscore", avgscore.get(1));
+		ob.addProperty("avgScore1", avgscore.get(0));
+		ob.addProperty("avgCnt1", avgscore.get(1));
 		//Json 파일을 Json 언어로 호출했던 곳으로 되돌려준다.
 		response.setContentType("application/json;charset=utf-8");
 		PrintWriter out=response.getWriter();

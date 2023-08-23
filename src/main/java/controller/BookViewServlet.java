@@ -54,8 +54,8 @@ public class BookViewServlet extends HttpServlet {
 			ArrayList<Number> score=sdao.getAvgScore(bno);
 			System.out.println("score.get(0) :"+score.get(0));
 			System.out.println("score.get(1) :"+score.get(1));
-			request.setAttribute("avgScore", score.get(0));
-			request.setAttribute("avgCnt", score.get(1));
+			request.setAttribute("avgScore1", score.get(0));
+			request.setAttribute("avgCnt1", score.get(1));
 			//web-star : end
 			
 			

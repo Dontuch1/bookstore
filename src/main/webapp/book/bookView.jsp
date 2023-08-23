@@ -101,8 +101,8 @@
 		<tr id="tbl_star2">
 			<th>평균 별점</th>
 			<td>  
-			<input id="avgScore" name="avgScore" value="${avgscore}" class="rating rating-loading" data-size="sm" readonly="readonly">
-			&nbsp; 평가자 인원 수 : <span id="spanCnt"> ${cntscore}</span>
+			<input id="avgScore" name="avgScore" value="${avgScore1}" class="rating rating-loading" data-size="sm" readonly="readonly">
+			&nbsp; 평가자 인원 수 : <span id="spanCnt">${avgCnt1}</span>
 			</td>
 		</tr>
 		
@@ -259,11 +259,11 @@ function saveStar() {
 	/* $("#avgscore").val(data.avgscore);
 	$("#cntscore").html(data.cntscore); */
 	$("#avgScore").rating("destory");
-	$("#avgScore").val(retData.avgscore);
+	$("#avgScore").val(retData.avgScore1);
 	$("#avgScore").rating("create"); //newStar 함수를 만듦으로서 create rating을 쓸 필요가 없다.
 	
 	let span_Cnt=document.getElementById("spanCnt");
-	span_Cnt.innerHTML=retData.cntscore;
+	span_Cnt.innerHTML=retData.avgCnt1;
 	// 별점을 등록하면 별점 목록을 다시 1페이지를 보여줘야 하기 때문에 함수를 바꾼다.
 	$("#tbl_star").html("");
 	$("#page").val(0);
