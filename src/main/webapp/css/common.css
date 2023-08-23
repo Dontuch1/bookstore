@@ -1,0 +1,25 @@
+@charset "UTF-8";
+main{
+	width:1200px;
+	margin: 20px auto;
+}
+h2{
+text-align:center;
+}
+table{
+	text-align:center;
+}
+th{text-align:center;}
+
+a:link,a:visited,a:hover{
+	text-decoration: none;
+	color:#333;
+	font-weight: bold;
+}
+
+.btn_log{
+	display:flex;
+	margin:10px 20px 10px 0px;
+	gap:5px;
+	justify-content: right;
+}
