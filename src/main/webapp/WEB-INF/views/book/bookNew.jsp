@@ -11,6 +11,7 @@
 <main>
 
 	<h2>도서 등록</h2>
+	<!--===  도서 등록  ===-->
 	<form action="bNew" method="post" id="uploadForm" enctype="multipart/form-data" >
 		<table class="table table-sm table-bordered">
 			<tr>
@@ -48,6 +49,8 @@
 				</td>
 			</tr>
 		</table>
+		
+		<!--===  도서 등록 버튼  ===-->
 		<c:if test="${sessionScope.mvo.grade=='a'}">
 			<div class="btn">
 				<button type="submit" class="btn btn-success">도서등록</button> &nbsp; 
