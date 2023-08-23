@@ -1,4 +1,4 @@
-package util;
+package com.ezen.utill;
 //오라클과 연동하기 위한 공통 모듈 
 
 import java.sql.Connection;

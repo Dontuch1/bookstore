@@ -1,4 +1,4 @@
-package controller;
+package com.ezen.controller;
 
 import java.io.IOException;
 

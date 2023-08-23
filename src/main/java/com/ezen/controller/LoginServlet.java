@@ -1,4 +1,4 @@
-package controller;
+package com.ezen.controller;
 
 import java.io.IOException;
 
@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import member.MemberDAO;
-import member.MemberVO;
+import com.ezen.member.MemberDAO;
+import com.ezen.member.MemberVO;
 
 /**
  * Servlet implementation class LoginServlet

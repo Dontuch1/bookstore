@@ -1,11 +1,11 @@
-package member;
+package com.ezen.member;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import util.JDBCUtil;
+import com.ezen.utill.JDBCUtil;
 
 public class MemberDAO {
 	private static MemberDAO dao=new MemberDAO();

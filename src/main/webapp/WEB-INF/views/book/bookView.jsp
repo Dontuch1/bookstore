@@ -133,7 +133,7 @@
 		<c:if test="${sessionScope.mvo.grade=='a'}">
 			<button type="button" id="btnEdit" onclick="bookEdit()" class="btn btn-warning" >도서수정</button>
 	 		<button type="button" id="btnDelete" onclick="bookDelete()" class="btn btn-danger" >도서삭제</button> 
-	 		<button type="submit" id="btnSave" class="btn btn-primary" style="display:none;">도서저장</button> 
+	 		<button type="submit" id="btnSave" onclick="bookSave()" class="btn btn-primary" style="display:none;">도서저장</button> 
 	 		<button type="reset" id="btnCancle" onclick="bookCancle()" class="btn btn-info" style="display:none;">수정취소</button>
  		</c:if> 
     </div>
@@ -298,6 +298,9 @@ function saveStar() {
 		//document.querySelector("#publisher").value="${vo.publisher}";
 		//document.querySelector("#price").value="${vo.price}";
 					
+	}
+	function bookSave() {
+		
 	}
 	//도서 삭제
 	function bookDelete(){

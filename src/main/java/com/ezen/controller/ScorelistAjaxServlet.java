@@ -1,4 +1,4 @@
-package controller;
+package com.ezen.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,13 +11,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ezen.book.BookscoreDAO;
+import com.ezen.book.BookscoreVO;
+import com.ezen.utill.PageVO;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-
-import book.BookscoreDAO;
-import book.BookscoreVO;
-import util.PageVO;
 
 /**
  * Servlet implementation class ScorelistServlet

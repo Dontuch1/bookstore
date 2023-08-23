@@ -1,4 +1,4 @@
-package book;
+package com.ezen.book;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,7 +9,7 @@ import java.util.List;
 
 import javax.naming.Context;
 
-import util.JDBCUtil;
+import com.ezen.utill.JDBCUtil;
 
 public class BookDAO {
 	//싱글톤

@@ -1,4 +1,4 @@
-package util;
+package com.ezen.utill;
 public class PageVO {
    //page 나누기 정보를 담을 객체
     private int page; //현재 페이지 (get)

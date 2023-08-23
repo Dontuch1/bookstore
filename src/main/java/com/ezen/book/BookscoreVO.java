@@ -1,4 +1,4 @@
-package book;
+package com.ezen.book;
 
 import java.sql.Date;
 

@@ -1,4 +1,4 @@
-package member;
+package com.ezen.member;
 
 import java.sql.Date;
 
