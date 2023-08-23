@@ -18,7 +18,7 @@
 	<!--=== 도서 등록 ===-->
 	<div id="top-button">
 		<c:if test="${sessionScope.mvo.grade=='a'}">
-			<a href="bNew"><button type="button" class="btn btn-primary">도서등록</button></a>
+			<a href="book?cmd=new"><button type="button" class="btn btn-primary">도서등록</button></a>
 		</c:if>
 	</div>
 	

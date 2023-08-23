@@ -1,4 +1,4 @@
-package com.ezen.controller;
+package com.ezen.controller2;
 
 import java.io.IOException;
 import java.util.List;
@@ -18,13 +18,13 @@ import com.ezen.utill.PageVO;
  * Servlet implementation class BookListServlet
  */
 @WebServlet("/bList")
-public class BookListServlet extends HttpServlet {
+public class BookListServlet_X extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public BookListServlet() {
+    public BookListServlet_X() {
         super();
         // TODO Auto-generated constructor stub
     }

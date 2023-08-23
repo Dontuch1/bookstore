@@ -1,4 +1,4 @@
-package com.ezen.controller;
+package com.ezen.controller2;
 
 import java.io.IOException;
 
@@ -8,19 +8,20 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+
+import com.ezen.book.BookDAO;
 
 /**
- * Servlet implementation class LogoutServlet
+ * Servlet implementation class BookDeketeServlet
  */
-@WebServlet("/logout")
-public class LogoutServlet extends HttpServlet {
+@WebServlet("/bDelete")
+public class BookDeketeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LogoutServlet() {
+    public BookDeketeServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,13 +30,17 @@ public class LogoutServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//세션얻기
-		HttpSession s=request.getSession();
-		//세션 지우기
-		s.invalidate();
-		//페이지이동-List
-		RequestDispatcher rd=request.getRequestDispatcher("bList");
-		rd.forward(request, response);
+		//encoding x
+		//파라메타 받기
+		int bno=Integer.parseInt(request.getParameter("bno"));
+		//dao 객체생성
+		BookDAO dao=BookDAO.getInstance();
+		//dao 메소드 구현
+		int result=dao.deleteBook(bno);
+		if(result==1) {//삭제 완료
+			RequestDispatcher rd=request.getRequestDispatcher("bList");
+			rd.forward(request, response);
+		}
 	}
 
 	/**

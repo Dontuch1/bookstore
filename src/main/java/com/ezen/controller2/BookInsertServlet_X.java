@@ -1,4 +1,4 @@
-package com.ezen.controller;
+package com.ezen.controller2;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,13 +19,13 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
  * Servlet implementation class BookInsertServlet
  */
 @WebServlet("/bNew")
-public class BookInsertServlet extends HttpServlet {
+public class BookInsertServlet_X extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public BookInsertServlet() {
+    public BookInsertServlet_X() {
         super();
         // TODO Auto-generated constructor stub
     }

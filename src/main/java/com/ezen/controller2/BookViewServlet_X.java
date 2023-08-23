@@ -1,4 +1,4 @@
-package com.ezen.controller;
+package com.ezen.controller2;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -18,13 +18,13 @@ import com.ezen.book.BookscoreDAO;
  * Servlet implementation class BookViewServlet
  */
 @WebServlet("/bView")
-public class BookViewServlet extends HttpServlet {
+public class BookViewServlet_X extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public BookViewServlet() {
+    public BookViewServlet_X() {
         super();
         // TODO Auto-generated constructor stub
     }

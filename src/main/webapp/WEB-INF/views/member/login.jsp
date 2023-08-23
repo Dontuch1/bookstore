@@ -3,7 +3,7 @@
 <%@ include file="../include/header.jsp" %>
 <main>
 	<div style="height:20px"></div>
-	<form action="login" method="post">
+	<form action="member?cmd=login" method="post">
 		<div class="box-body">	
 			<div class="form-group row">
 				<label for="name" class="col-sm-2 col-form-label">아이디</label>

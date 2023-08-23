@@ -22,12 +22,12 @@
 <div class="btn_log">
 	<c:choose>
 		<c:when test="${sessionScope.mvo==null}">
-			<button type="button" id="login" name="login" onclick="location.href='login'" class="btn btn-success" >로 그 인</button>
+			<button type="button" id="login" name="login" onclick="location.href='member?cmd=login'" class="btn btn-success" >로 그 인</button>
 			<button type="button" id="logout" name="logout" onclick="" class="btn btn-warning" >회원가입</button>		
 		</c:when>
 		<c:otherwise>
 			${sessionScope.mvo.name}님 
-			<button type="button" id="logout" name="logout" onclick="location.href='logout'" class="btn btn-success" >로그아웃</button>
+			<button type="button" id="logout" name="logout" onclick="location.href='member?cmd=logout'" class="btn btn-success" >로그아웃</button>
 		</c:otherwise>
 	</c:choose>	
 </div>

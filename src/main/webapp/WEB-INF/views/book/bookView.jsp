@@ -129,7 +129,7 @@
 	<!-- 별점 저장 끝 -->
 	<br><br><br>
 	<div class="btn_rud">
-		<button type="button" id="btnList" onclick="location.href='bList?page=${page}&searchword=${searchword}&searchtype=${searchtype}'" class="btn btn-success" >도서목록</button>
+		<button type="button" id="btnList" onclick="location.href='book?cmd=list&page=${page}&searchword=${searchword}&searchtype=${searchtype}'" class="btn btn-success" >도서목록</button>
 		<c:if test="${sessionScope.mvo.grade=='a'}">
 			<button type="button" id="btnEdit" onclick="bookEdit()" class="btn btn-warning" >도서수정</button>
 	 		<button type="button" id="btnDelete" onclick="bookDelete()" class="btn btn-danger" >도서삭제</button> 
