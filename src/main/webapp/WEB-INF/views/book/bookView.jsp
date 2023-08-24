@@ -21,7 +21,7 @@
 
 <main>
 <h2>도서 상세</h2>
-<form action="bEdit" method="post"  enctype="multipart/form-data" id="uploadForm" name="uploadForm" >
+<form action="book?cmd=edit" method="post"  enctype="multipart/form-data" id="uploadForm" name="uploadForm" >
 	<input type="hidden" value="${vo.bno}" name="bno" id="bno">
 	<table class="table table-sm table-bordered">
 		<tr>
@@ -78,7 +78,7 @@
 			<th>도서 이미지</th>
 			<td class="disp" >
 				<c:if test="${vo.savFilename!=null}">
-					<img src="imgDown?upload=${vo.savePath}&saveFname=${vo.savFilename}&originFname=${vo.srcFilename}" alt="" height="300px">
+					<img src="book?cmd=imgDown&upload=${vo.savePath}&saveFname=${vo.savFilename}&originFname=${vo.srcFilename}" alt="" height="300px">
 				</c:if>				
 			</td>
 			<td class="edit" style="display:none;">

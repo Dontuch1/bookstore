@@ -63,8 +63,6 @@ public class ScorelistAjaxServlet extends HttpServlet {
 		
 		// json으로 데이터를 조립 후 호출한 곳으로 다시 보내서 출력한다.
 		if(list!=null) {
-			
-		
 		JsonObject jobj=new JsonObject();
 		jobj.addProperty("next", next); // 더보기 버튼 활성화를 결정 짓는 property
 		// json 객체 만들기
